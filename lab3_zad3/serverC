@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+gcc `xmlrpc-c-config abyss-server --cflags`	 -O2 -Wall -c server.c
+gcc `xmlrpc-c-config abyss-server --libs`	 -s server.c -o server
+
